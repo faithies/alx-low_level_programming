@@ -11,7 +11,7 @@ int main()
 {
 	int i = 0;
 
-	for (; i <= 16; i++)
+	for (; i <= 15; i++)
 	{
 		if (i < 10)
 		{
