@@ -1,7 +1,6 @@
 #include "main.h"
 
 void print_alphabet(void);
-
 /**
  * main - check the code
  *
@@ -10,6 +9,6 @@ void print_alphabet(void);
 
 int main(void)
 {
-     print_alphabet();
+ print_alphabet();
 	return (0);
 }
