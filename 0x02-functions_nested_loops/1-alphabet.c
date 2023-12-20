@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>
+
 /**
  * print_alphabet - Function name
  * _putchar - Prints to stdout
