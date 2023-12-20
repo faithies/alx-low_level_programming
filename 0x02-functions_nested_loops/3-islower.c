@@ -3,15 +3,17 @@
 
 /**
  * _islower - function name
+ * @c: function parameter
  * Return: 0 on error an 1 on success
+ *
  */
 
 int _islower(int c)
 {
 
-	while (c <= 122)
+	while (c <= 122 && c >= 90)
 	{
-		if (c == 72)
+		if (c == 65 && c <= 90)
 		{
 			return (0);
 		}
