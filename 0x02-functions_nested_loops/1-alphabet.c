@@ -12,11 +12,11 @@ int _putchar(char c);
 
 void print_alphabet(void)
 {
-	char a;
+	char c;
 
-	for (a = 97; a <= 122; a++)
+	for (c = 97; c <= 122; c++)
 	{
-		_putchar(a);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
