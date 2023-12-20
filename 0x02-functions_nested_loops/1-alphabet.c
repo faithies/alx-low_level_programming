@@ -4,7 +4,6 @@
 /**
  * print_alphabet - Function name
  * _putchar - Prints to stdout
- * @c: _putchar parameter
  * Return: Always 0 on success
  */
 
