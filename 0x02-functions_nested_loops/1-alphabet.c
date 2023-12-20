@@ -8,8 +8,6 @@
  * Return: Always 0 on success
  */
 
-int _putchar(char c);
-
 void print_alphabet(void)
 {
 	char c = 97;
