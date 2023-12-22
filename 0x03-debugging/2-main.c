@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * main - prints the largest of the 3 integers
+ * main - prints the largest of 3 integers
  * Return: 0
  */
 
 int main(void)
 {
 	int a, b, c;
-int largest;
+	int largest;
 
 	a = 972;
 	b = -98;
