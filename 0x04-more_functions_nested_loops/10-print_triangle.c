@@ -2,33 +2,26 @@
 
 void print_triangle(int size)
 {
-	int i;
-int j;
+	int new_size = size;
+	int space;
+	int character;
+	int triangle;
 
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
 	
+	for (character = 0; character < size ; character++)
+	{
 
-		for (i = 0; i < size; i++)
+		for(triangle = 0; triangle <= character; triangle++)
 		{
-			
-			for (j = 1; j <= i; j++)
-			{
-			_putchar(' ');
-				_putchar('#');
-				
-			}
-			
-			
-			
-		_putchar('#');
-		_putchar('\n');
+			_putchar('#');
 		}
+
+			for (space = 1; space <= size - 1; space++)
+			{
+				_putchar(' ');
+			}
+
+		_putchar('\n');
+		new_size = new_size - 1;
 	}
-	
-	
-}	
+}
