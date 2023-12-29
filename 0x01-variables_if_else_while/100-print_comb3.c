@@ -4,27 +4,40 @@
 int main(void)
 {
     
-    int j;
-   int i = 0;
+    int j = 1;
+	int i;
+	int k = 2;
+	int l;
 
-    for (j = 0; j <= 9; j++)
+
+	while(k <= 9)
+	{
+	
+	
+	
+    while(j <= 9)
     {
-
-	    for (; i <= 9; i++)
-
+	    for (i = 0; i <= 0; i++)
 	    {
 		    putchar('0' + i);
 	    }
 
-	    putchar ('0' + j);
 
-	    if(j <= 9)
+	    putchar('0' + j);
+	    j++;
+
+
+	 if (j <= 9)
 	    {
 		    putchar(',');
-		    putchar(' ');
 	    }
+
     }
-	  
-    return 0;
-}
+	
+           for(l = 1; l <= 1; l++)
+        {
+                putchar('0' + l);
+        }
+
+	putchar('
 
