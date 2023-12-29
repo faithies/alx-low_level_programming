@@ -2,7 +2,6 @@
 
 /**
  * main - entry point of code
- * @putchar: prints code to stdout
  * Return: Always 0 on success
  */
 
