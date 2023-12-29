@@ -1,43 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
+
+/**
+ * main - entry point of code
+ * Return: Always 0 on success
+ */
 
 int main(void)
 {
-    
-    int j = 1;
-	int i;
-	int k = 2;
-	int l;
+	int first_num;
+	int second_num;
 
 
-	while(k <= 9)
+	for (first_num  = 0; first_num < 9; first_num++)
 	{
-	
-	
-	
-    while(j <= 9)
-    {
-	    for (i = 0; i <= 0; i++)
-	    {
-		    putchar('0' + i);
-	    }
+		for (second_num = 1; second_num <= 9; second_num++)
+		{
+			if (second_num > first_num && first_num != second_num)
+			{
+				putchar(first_num + '0');
+				putchar(second_num + '0');
 
+				if (first_num != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 
-	    putchar('0' + j);
-	    j++;
-
-
-	 if (j <= 9)
-	    {
-		    putchar(',');
-	    }
-
-    }
-	
-           for(l = 1; l <= 1; l++)
-        {
-                putchar('0' + l);
-        }
-
-	putchar('
-
+		}
+	}
+	putchar('\n');
+	return (0);
+}
