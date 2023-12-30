@@ -20,7 +20,7 @@ int main(void)
 				putchar('0' + (first_num % 10));
 				putchar(' ');
 				putchar('0' + (second_num / 10));
-				putchar('0' + (second_num % 10))
+				putchar('0' + (second_num % 10));
 			}
 			if (second_num != 99 || first_num != 98)
 			{
@@ -30,7 +30,6 @@ int main(void)
 		}
 
 	}
-}
 
 putchar('\n');
 return (0);
