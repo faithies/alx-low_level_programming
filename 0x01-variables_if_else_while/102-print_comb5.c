@@ -21,11 +21,13 @@ int main(void)
 				putchar(' ');
 				putchar('0' + (second_num / 10));
 				putchar('0' + (second_num % 10));
-			}
+
 			if (second_num != 99 || first_num != 98)
 			{
 				putchar(',');
 				putchar(' ');
+			}
+
 			}
 		}
 
