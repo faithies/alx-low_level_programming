@@ -2,7 +2,7 @@
 
 /**
  * main - function name
- * @Return: Always 0 on success
+ * Return: Always 0 on success
  */
 
 int main(void)
@@ -20,18 +20,18 @@ int main(void)
 				putchar('0' + (first_num % 10));
 				putchar(' ');
 				putchar('0' + (second_num / 10));
-				putchar('0' + (second_num % 10));	
-
-				if (second_num != 99 || first_num != 98)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar('0' + (second_num % 10))
 			}
-
+			if (second_num != 99 || first_num != 98)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-	}
 
-	putchar('\n');
-	return (0);
+	}
+}
+
+putchar('\n');
+return (0);
 }
