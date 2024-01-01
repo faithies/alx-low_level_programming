@@ -7,7 +7,7 @@
 int main(void)
 {
 
-	int sum = 0;
+	long int sum = 0;
 	int index;
 
 
@@ -19,7 +19,10 @@ int main(void)
 		{
 			printf("%d", sum);
 		}
+		else
+		{
 		printf("\n");
+		}
 	}
 
 	return (0);
