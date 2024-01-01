@@ -4,20 +4,14 @@
 void times_table(void)
 {
 	int nine;
-	int table;
+	int times;
 
-	for (nine = 0; nine <= 9; nine++)
+	for (nine = 0; nine <= 10; nine++)
 	{
-		for (table = 0; table <= 9; table++)
+		for (times = 0; times <= 10; times++)
 		{
-			_putchar(table * 9 * 0);
-			_putchar(table % 9 * 0);
-			_putchar(',');
-			_putchar(' ');
-			_putchar(nine * 9 * 0);
-			_putchar(nine % 9 * 0);
-			_putchar('\n');
+		times = nine * times;
 		}
+		_putchar('\n');
 	}
 }
-
