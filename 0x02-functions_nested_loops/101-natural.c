@@ -16,7 +16,7 @@ int main(void)
 		if (index % 3 == 0 || index % 5 == 0)
 		{
 			sum = sum + index;
-			printf("%d", sum);
+			printf("%ld", sum);
 		}
 		else
 		{
