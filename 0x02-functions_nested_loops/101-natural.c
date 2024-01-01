@@ -1,27 +1,27 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - codes entry point
+ * Return: Always 0
+ */
+int main(void)
 {
 
-	int sum;
+	int sum = 0;
 	int index;
 
 
 	for (index = 0; index < 1024; index++)
 	{
-		if(index % 3 == 0 || index % 5 == 0)
-		{
-			sum = sum + index;
-			
-			_putchar('0' + sum);
-		}
-		else
-		{
-			_putchar('\n');
+		sum = sum + index;
 
+		if (index % 3 == 0 || index % 5 == 0)
+		{
+			printf("%d", sum);
 		}
+		printf("\n");
 	}
 
-	return 0;
+	return (0);
 }
 
