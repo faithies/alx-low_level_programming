@@ -8,11 +8,6 @@
 
 void _puts(char *str)
 {
-	while(*str == EOF)
-	{
-		printf("%s", str);
-	
-	else
-		return (1);
-	}
+	puts(str);
+	putchar('\n');
 }
