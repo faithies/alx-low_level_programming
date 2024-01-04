@@ -1,0 +1,17 @@
+#include "main.h"
+
+void print_rev(char *s)
+{
+char iterator;
+char counter = 0;
+
+	while (s[counter] != '\0')
+	{
+		counter++;
+	}
+
+	for (iterator = counter - 1; iterator >= 0; iterator--)
+	{
+		_putchar(s[iterator]);
+	}
+}
