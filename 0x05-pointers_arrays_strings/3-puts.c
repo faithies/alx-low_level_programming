@@ -8,6 +8,18 @@
 
 void _puts(char *str)
 {
-	puts(str);
-	putchar('\n');
+	while (*str != '\0')
+	{
+		str++;
+	if(*str == '\0')
+	{
+		puts(str);
+	}
+
+	else
+	{
+		NULL;
+	}
+
+	}
 }
