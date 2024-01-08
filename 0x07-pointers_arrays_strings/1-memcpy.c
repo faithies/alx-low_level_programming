@@ -21,7 +21,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		*dest = src[iterator];
 	}
-	*dest = '\0';
+	dest = '\0';
 
 	return (dest);
 }
