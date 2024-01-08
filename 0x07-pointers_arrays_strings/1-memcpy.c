@@ -11,15 +11,10 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int iterator;
-	int length = 0;
 
-	for (iterator = 0; iterator != '\0'; iterator++)
-	{
-		length = length + 1;
-	}
 	for (iterator = 0; iterator < n; iterator++)
 	{
-		*dest = src[iterator];
+		dest[iterator] = src[iterator];
 	}
 	dest = '\0';
 
