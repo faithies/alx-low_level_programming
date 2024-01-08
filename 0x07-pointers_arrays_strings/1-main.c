@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
+char *_memcpy(char *dest, char *src, unsigned int n);
+
 /**
  * simple_print_buffer - prints buffer in hexa
  * @buffer: the address of memory to print
