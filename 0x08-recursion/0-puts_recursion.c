@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _puts_recursion - function name
+ * @s: function prototype
+ */
+
 void _puts_recursion(char *s)
 {
 	if (*s != '\0')
