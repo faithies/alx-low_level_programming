@@ -6,7 +6,7 @@
  * Return: find_num(n) on success -1 on failure
  */
 
-int find_num(int n);
+int find_num(int n, int num);
 
 int _sqrt_recursion(int n)
 {
@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 
 	else
 	{
-		return (find_num(n));
+		return (find_num(n, 0));
 	}
 }
 
@@ -27,27 +27,20 @@ int _sqrt_recursion(int n)
  * Return: result on success -1 on failure
  */
 
-int find_num(int n)
+int find_num(int n, int num)
 {
-	static int num;
-	int result;
-
 	if (num * num == n)
 	{
-		result = num;
-		num = 0;
-		return (result);
+		return (num);
 
 	}
 	else if (num * num > n)
 	{
-		num = 0;
 		return (-1);
 	}
 	else
 	{
-		num++;
-		return (find_num(n));
+		return (find_num(n, num + 1));
 	}
 return (0);
 }
