@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int _sqrt_recursion(int n);
-int find(int n);
+int find_num(int n);
 
 /**
  * main - check the code
