@@ -3,6 +3,7 @@
 /**
  * _sqrt_recursion - function name
  * @n: parameter that returns the natural square root
+ * @num: function parameter
  * Return: find_num(n) on success -1 on failure
  */
 
@@ -24,6 +25,7 @@ int _sqrt_recursion(int n)
 /**
  * find_num - function name
  * @n: function parameters
+ * @num: function parameter
  * Return: result on success -1 on failure
  */
 
