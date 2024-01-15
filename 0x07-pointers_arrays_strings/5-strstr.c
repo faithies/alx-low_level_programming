@@ -12,6 +12,11 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *ptr;
 
+	if(haystack == NULL || needle == NULL)
+	{
+		return (NULL);
+	}
+
 	while (*haystack != '\0')
 	{
 		ptr = needle;
