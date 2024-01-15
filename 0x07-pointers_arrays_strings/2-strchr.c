@@ -10,15 +10,15 @@
 
 char *_strchr(char *s, char c)
 {
-	char *ptr = &c;
+	char *ptr = s;
 
 		while (*ptr)
 		{
-		if (*ptr == *s)
+		if (*ptr == c)
 		{
-			return (s);
+			return (ptr);
 		}
-		s++;
+		ptr++;
 		}
 return (NULL);
 }
