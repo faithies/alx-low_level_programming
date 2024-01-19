@@ -11,11 +11,16 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int iterator;
-	char *str;
-
-	str = malloc(sizeof(char) * size);
+	char *ptr;
 
 	if (size == 0)
+	{
+		return (NULL);
+	}
+
+	ptr = malloc(sizeof(char) * size);
+
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
@@ -24,12 +29,5 @@ char *create_array(unsigned int size, char c)
 	{
 		str[iterator] = c;
 	}
-
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-
-	return (str);
-	free(str);
+		return (str);
 }
