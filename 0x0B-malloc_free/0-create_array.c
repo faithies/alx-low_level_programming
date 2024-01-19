@@ -25,6 +25,11 @@ char *create_array(unsigned int size, char c)
 		str[iterator] = c;
 	}
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	return (str);
 	free(str);
 }
