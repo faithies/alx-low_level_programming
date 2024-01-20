@@ -15,10 +15,15 @@ char *str_concat(char *s1, char *s2)
 	unsigned int iterator1 = 0;
 	unsigned int iterator2 = 0;
 
-	if (s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
+	if(s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	while (s1[length1] != '\0')
 	{
 		length1++;
