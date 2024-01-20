@@ -10,7 +10,6 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *dest;
-	char *src;
 	unsigned int length1 = 0;
 	unsigned int length2 = 0;
 	unsigned int iterator1 = 0;
@@ -20,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (s1 != NULL && s1[length1] != '\0')
+	while (s1[length1] != '\0')
 	{
 		length1++;
 	}
@@ -29,11 +28,9 @@ char *str_concat(char *s1, char *s2)
 		length2++;
 	}
 	dest = malloc(sizeof(char) * (length1 + length2 + 1));
-	src = malloc(sizeof(char) * (length2 + 1));
-	if (dest == NULL || src == NULL)
+
+	if (dest == NULL)
 	{
-		free(dest);
-		free(src);
 		return (NULL);
 	}
 	while (iterator1 < length1)
