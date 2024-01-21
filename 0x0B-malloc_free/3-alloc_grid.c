@@ -19,7 +19,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	ptr =(int **) malloc(sizeof(int **) * height);/*allocate memory for rows (height)*/
+	ptr = (int **) malloc(sizeof(int **) * height);/*memory for rows (height)*/
 	if (ptr == NULL)/*on allocation failure*/
 	{
 		return (NULL);
@@ -36,7 +36,7 @@ int **alloc_grid(int width, int height)
 			{
 				free(ptr[iterator2]);
 			}
-			free(ptr[iterator1]);
+			free(ptr);
 			return (NULL);
 		}
 
