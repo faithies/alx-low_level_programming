@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * array_iterator - a function name that takes three argument 
+ * array_iterator - a function name that takes three argument
  * and executes the purpose of its given parameter
  * the first argument is a pointer to an interger
  * the second is an array size
