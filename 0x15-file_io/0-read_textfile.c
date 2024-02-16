@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfie - function name that reads a text file and prints
+ * read_textfile - function name that reads a text file and prints
  * it to the POSIX stdout
  * @filename: represent the name of the file for reading
  * @letters: number of letters it should print
